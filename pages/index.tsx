@@ -1,4 +1,5 @@
 import { BuildingConfigurator } from "@/components/BuildingConfigurator";
+import { GetStaticProps } from "next";
 
 export default function Home() {
   return (
@@ -7,3 +8,7 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps = (async () => {
+  return { props: { } }
+})satisfies GetStaticProps<object>;
